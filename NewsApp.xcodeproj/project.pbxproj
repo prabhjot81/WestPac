@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		DD245DC819CD28230066100F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DC719CD28230066100F /* main.m */; };
 		DD245DCB19CD28230066100F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCA19CD28230066100F /* AppDelegate.m */; };
-		DD245DCE19CD28230066100F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCD19CD28230066100F /* ViewController.m */; };
-		DD245DD119CD28230066100F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD245DCF19CD28230066100F /* Main.storyboard */; };
-		DD245DD319CD28230066100F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD245DD219CD28230066100F /* Images.xcassets */; };
-		DD245DD619CD28230066100F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD245DD419CD28230066100F /* LaunchScreen.xib */; };
+		DD245DCE19CD28230066100F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCD19CD28230066100F /* NewsViewController.m */; };
 		DD245DE219CD28230066100F /* NewsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DE119CD28230066100F /* NewsAppTests.m */; };
+		DD245DEC19CD42950066100F /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DEB19CD42950066100F /* WebService.m */; };
+		DD245DF019CD44750066100F /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DEF19CD44750066100F /* News.m */; };
+		DD57AA0C19CDAB4000BDC8FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */; };
+		DD57AA0F19CDABEE00BDC8FA /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,18 @@
 		DD245DC719CD28230066100F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD245DC919CD28230066100F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD245DCA19CD28230066100F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD245DCC19CD28230066100F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD245DCD19CD28230066100F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DD245DD019CD28230066100F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD245DD219CD28230066100F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DD245DD519CD28230066100F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DD245DCC19CD28230066100F /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		DD245DCD19CD28230066100F /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		DD245DDB19CD28230066100F /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD245DE019CD28230066100F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD245DE119CD28230066100F /* NewsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppTests.m; sourceTree = "<group>"; };
+		DD245DEB19CD42950066100F /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		DD245DED19CD438C0066100F /* WebService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		DD245DEE19CD44750066100F /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		DD245DEF19CD44750066100F /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+		DD57AA0D19CDABEE00BDC8FA /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +88,15 @@
 			children = (
 				DD245DC919CD28230066100F /* AppDelegate.h */,
 				DD245DCA19CD28230066100F /* AppDelegate.m */,
-				DD245DCC19CD28230066100F /* ViewController.h */,
-				DD245DCD19CD28230066100F /* ViewController.m */,
-				DD245DCF19CD28230066100F /* Main.storyboard */,
-				DD245DD219CD28230066100F /* Images.xcassets */,
-				DD245DD419CD28230066100F /* LaunchScreen.xib */,
+				DD245DCC19CD28230066100F /* NewsViewController.h */,
+				DD245DCD19CD28230066100F /* NewsViewController.m */,
+				DD57AA0D19CDABEE00BDC8FA /* NewsDetailViewController.h */,
+				DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */,
+				DD245DED19CD438C0066100F /* WebService.h */,
+				DD245DEB19CD42950066100F /* WebService.m */,
+				DD245DEE19CD44750066100F /* News.h */,
+				DD245DEF19CD44750066100F /* News.m */,
+				DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */,
 				DD245DC519CD28230066100F /* Supporting Files */,
 			);
 			path = NewsApp;
@@ -199,9 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD245DD119CD28230066100F /* Main.storyboard in Resources */,
-				DD245DD619CD28230066100F /* LaunchScreen.xib in Resources */,
-				DD245DD319CD28230066100F /* Images.xcassets in Resources */,
+				DD57AA0C19CDAB4000BDC8FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD245DCE19CD28230066100F /* ViewController.m in Sources */,
+				DD245DF019CD44750066100F /* News.m in Sources */,
+				DD57AA0F19CDABEE00BDC8FA /* NewsDetailViewController.m in Sources */,
+				DD245DCE19CD28230066100F /* NewsViewController.m in Sources */,
 				DD245DCB19CD28230066100F /* AppDelegate.m in Sources */,
+				DD245DEC19CD42950066100F /* WebService.m in Sources */,
 				DD245DC819CD28230066100F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +252,6 @@
 			targetProxy = DD245DDC19CD28230066100F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DD245DCF19CD28230066100F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD245DD019CD28230066100F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DD245DD419CD28230066100F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD245DD519CD28230066100F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD245DE319CD28230066100F /* Debug */ = {
@@ -345,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +348,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +409,7 @@
 				DD245DE719CD28230066100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD245DE819CD28230066100F /* Build configuration list for PBXNativeTarget "NewsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +418,7 @@
 				DD245DEA19CD28230066100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NewsViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,22 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+
+    NewsViewController *viewController = [[NewsViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:viewController];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
+    _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    _activityIndicator.center = self.window.center;
+    [_activityIndicator hidesWhenStopped];
+    [self.window addSubview:_activityIndicator];
+   
     return YES;
 }
 

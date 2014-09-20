@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewsViewController.h
 //  NewsApp
 //
 //  Created by Prabh Dhaliwal on 9/20/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface NewsViewController : UITableViewController <UITableViewDataSource, UITableViewDataSource>
 
 
 @end
