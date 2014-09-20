@@ -33,6 +33,9 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
 
     _app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     _newsListImageDictionary = [[NSMutableDictionary alloc] init];
+    // add refresh button
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(fetchNews)];
+    self.navigationItem.leftBarButtonItem = refreshItem;
 
     [self fetchNews];
 }
@@ -70,18 +73,25 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
     return [_newsListArray count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     News *newsItem = _newsListArray[indexPath.row];
     
-    UITableViewCell * newsCell = [self.tableView dequeueReusableCellWithIdentifier:kUserCellIdentifier];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"CellIdentifier%ld", (long)[indexPath row]];
+    
+    UITableViewCell * newsCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (newsCell == nil)
     {
         newsCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kUserCellIdentifier];
         [newsCell.textLabel setText:newsItem.headline];
         [newsCell.detailTextLabel setText:newsItem.slugLine];
+        [newsCell.detailTextLabel setNumberOfLines:3];
         UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        activityIndicator.frame = CGRectMake(10, 10, 30, 30);
+        activityIndicator.frame = CGRectMake(35, 25, 30, 30);
         [activityIndicator startAnimating];
         [activityIndicator setTag:[indexPath row]];
         [newsCell.imageView addSubview:activityIndicator];
@@ -89,6 +99,7 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
         if (![_newsListImageDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)[indexPath row]]] && newsItem.thumbnailImageHref && ![newsItem.thumbnailImageHref isKindOfClass:[NSNull class]] ) {
             if ([newsItem.thumbnailImageHref length] != 0) {
                [newsCell.imageView setImage:[UIImage imageNamed:@"blank"]];
+                [newsCell.imageView setFrame:CGRectMake(10, 10, 60, 60)];
                 myBackgroundQueue = dispatch_queue_create("com.westpac.photo", NULL);
                 dispatch_async(myBackgroundQueue, ^(void) {
                     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:newsItem.thumbnailImageHref]];
@@ -99,6 +110,8 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
                     });
                 });
             }
+        } else {
+            [newsCell.imageView setImage:[UIImage imageWithData:[_newsListImageDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)[indexPath row]]]]];
         }
     }
     return newsCell;

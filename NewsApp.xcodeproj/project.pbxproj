@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		DD245DC819CD28230066100F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DC719CD28230066100F /* main.m */; };
 		DD245DCB19CD28230066100F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCA19CD28230066100F /* AppDelegate.m */; };
-		DD245DCE19CD28230066100F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCD19CD28230066100F /* NewsViewController.m */; };
 		DD245DE219CD28230066100F /* NewsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DE119CD28230066100F /* NewsAppTests.m */; };
-		DD245DEC19CD42950066100F /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DEB19CD42950066100F /* WebService.m */; };
-		DD245DF019CD44750066100F /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DEF19CD44750066100F /* News.m */; };
 		DD57AA0C19CDAB4000BDC8FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */; };
-		DD57AA0F19CDABEE00BDC8FA /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */; };
+		DD57AA1719CDD16A00BDC8FA /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1619CDD16A00BDC8FA /* News.m */; };
+		DD57AA1C19CDD1A500BDC8FA /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1919CDD1A500BDC8FA /* NewsDetailViewController.m */; };
+		DD57AA1D19CDD1A500BDC8FA /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1B19CDD1A500BDC8FA /* NewsViewController.m */; };
+		DD57AA2019CDD1B100BDC8FA /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1F19CDD1B100BDC8FA /* WebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +33,18 @@
 		DD245DC719CD28230066100F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD245DC919CD28230066100F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD245DCA19CD28230066100F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD245DCC19CD28230066100F /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		DD245DCD19CD28230066100F /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		DD245DDB19CD28230066100F /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD245DE019CD28230066100F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD245DE119CD28230066100F /* NewsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppTests.m; sourceTree = "<group>"; };
-		DD245DEB19CD42950066100F /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
-		DD245DED19CD438C0066100F /* WebService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
-		DD245DEE19CD44750066100F /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
-		DD245DEF19CD44750066100F /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
-		DD57AA0D19CDABEE00BDC8FA /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
-		DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		DD57AA1519CDD16A00BDC8FA /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Model/News.h; sourceTree = "<group>"; };
+		DD57AA1619CDD16A00BDC8FA /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Model/News.m; sourceTree = "<group>"; };
+		DD57AA1819CDD1A500BDC8FA /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailViewController.h; path = Controller/NewsDetailViewController.h; sourceTree = "<group>"; };
+		DD57AA1919CDD1A500BDC8FA /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailViewController.m; path = Controller/NewsDetailViewController.m; sourceTree = "<group>"; };
+		DD57AA1A19CDD1A500BDC8FA /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Controller/NewsViewController.h; sourceTree = "<group>"; };
+		DD57AA1B19CDD1A500BDC8FA /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Controller/NewsViewController.m; sourceTree = "<group>"; };
+		DD57AA1E19CDD1B100BDC8FA /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebService.h; path = Webservices/WebService.h; sourceTree = "<group>"; };
+		DD57AA1F19CDD1B100BDC8FA /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebService.m; path = Webservices/WebService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,16 +86,11 @@
 		DD245DC419CD28230066100F /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD57AA1419CDD14300BDC8FA /* Model */,
+				DD57AA1319CDD12C00BDC8FA /* Webservices */,
+				DD57AA1119CDD10200BDC8FA /* Controller */,
 				DD245DC919CD28230066100F /* AppDelegate.h */,
 				DD245DCA19CD28230066100F /* AppDelegate.m */,
-				DD245DCC19CD28230066100F /* NewsViewController.h */,
-				DD245DCD19CD28230066100F /* NewsViewController.m */,
-				DD57AA0D19CDABEE00BDC8FA /* NewsDetailViewController.h */,
-				DD57AA0E19CDABEE00BDC8FA /* NewsDetailViewController.m */,
-				DD245DED19CD438C0066100F /* WebService.h */,
-				DD245DEB19CD42950066100F /* WebService.m */,
-				DD245DEE19CD44750066100F /* News.h */,
-				DD245DEF19CD44750066100F /* News.m */,
 				DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */,
 				DD245DC519CD28230066100F /* Supporting Files */,
 			);
@@ -126,6 +121,35 @@
 				DD245DE019CD28230066100F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD57AA1119CDD10200BDC8FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD57AA1A19CDD1A500BDC8FA /* NewsViewController.h */,
+				DD57AA1B19CDD1A500BDC8FA /* NewsViewController.m */,
+				DD57AA1819CDD1A500BDC8FA /* NewsDetailViewController.h */,
+				DD57AA1919CDD1A500BDC8FA /* NewsDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DD57AA1319CDD12C00BDC8FA /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				DD57AA1E19CDD1B100BDC8FA /* WebService.h */,
+				DD57AA1F19CDD1B100BDC8FA /* WebService.m */,
+			);
+			name = Webservices;
+			sourceTree = "<group>";
+		};
+		DD57AA1419CDD14300BDC8FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD57AA1519CDD16A00BDC8FA /* News.h */,
+				DD57AA1619CDD16A00BDC8FA /* News.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD245DF019CD44750066100F /* News.m in Sources */,
-				DD57AA0F19CDABEE00BDC8FA /* NewsDetailViewController.m in Sources */,
-				DD245DCE19CD28230066100F /* NewsViewController.m in Sources */,
+				DD57AA2019CDD1B100BDC8FA /* WebService.m in Sources */,
+				DD57AA1C19CDD1A500BDC8FA /* NewsDetailViewController.m in Sources */,
+				DD57AA1719CDD16A00BDC8FA /* News.m in Sources */,
+				DD57AA1D19CDD1A500BDC8FA /* NewsViewController.m in Sources */,
 				DD245DCB19CD28230066100F /* AppDelegate.m in Sources */,
-				DD245DEC19CD42950066100F /* WebService.m in Sources */,
 				DD245DC819CD28230066100F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
