@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD140B2B19D7DF4000A858F0 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = DD140B2A19D7DF4000A858F0 /* blank.png */; };
 		DD245DC819CD28230066100F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DC719CD28230066100F /* main.m */; };
 		DD245DCB19CD28230066100F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DCA19CD28230066100F /* AppDelegate.m */; };
 		DD245DE219CD28230066100F /* NewsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD245DE119CD28230066100F /* NewsAppTests.m */; };
-		DD57AA0C19CDAB4000BDC8FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */; };
 		DD57AA1719CDD16A00BDC8FA /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1619CDD16A00BDC8FA /* News.m */; };
 		DD57AA1C19CDD1A500BDC8FA /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1919CDD1A500BDC8FA /* NewsDetailViewController.m */; };
 		DD57AA1D19CDD1A500BDC8FA /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57AA1B19CDD1A500BDC8FA /* NewsViewController.m */; };
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD140B2A19D7DF4000A858F0 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		DD245DC219CD28230066100F /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD245DC619CD28230066100F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD245DC719CD28230066100F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		DD245DDB19CD28230066100F /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD245DE019CD28230066100F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD245DE119CD28230066100F /* NewsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppTests.m; sourceTree = "<group>"; };
-		DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		DD57AA1519CDD16A00BDC8FA /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Model/News.h; sourceTree = "<group>"; };
 		DD57AA1619CDD16A00BDC8FA /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Model/News.m; sourceTree = "<group>"; };
 		DD57AA1819CDD1A500BDC8FA /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailViewController.h; path = Controller/NewsDetailViewController.h; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 				DD57AA1119CDD10200BDC8FA /* Controller */,
 				DD245DC919CD28230066100F /* AppDelegate.h */,
 				DD245DCA19CD28230066100F /* AppDelegate.m */,
-				DD57AA0B19CDAB4000BDC8FA /* Images.xcassets */,
 				DD245DC519CD28230066100F /* Supporting Files */,
 			);
 			path = NewsApp;
@@ -102,6 +101,7 @@
 			children = (
 				DD245DC619CD28230066100F /* Info.plist */,
 				DD245DC719CD28230066100F /* main.m */,
+				DD140B2A19D7DF4000A858F0 /* blank.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD57AA0C19CDAB4000BDC8FA /* Images.xcassets in Resources */,
+				DD140B2B19D7DF4000A858F0 /* blank.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

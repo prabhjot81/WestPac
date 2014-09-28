@@ -30,6 +30,7 @@
     _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _activityIndicator.center = self.window.center;
     [_activityIndicator hidesWhenStopped];
+    [_activityIndicator setBackgroundColor:[UIColor lightGrayColor]];
     [self.window addSubview:_activityIndicator];
    
     return YES;

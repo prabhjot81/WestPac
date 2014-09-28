@@ -86,7 +86,7 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
     UITableViewCell * newsCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (newsCell == nil)
     {
-        newsCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kUserCellIdentifier];
+        newsCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
         [newsCell.textLabel setText:newsItem.headline];
         [newsCell.detailTextLabel setText:newsItem.slugLine];
         [newsCell.detailTextLabel setNumberOfLines:3];
@@ -107,6 +107,7 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
                         [newsCell.imageView setImage:[UIImage imageWithData:imageData]];
                         [activityIndicator stopAnimating];
                         [_newsListImageDictionary setObject:imageData forKey:[NSString stringWithFormat:@"%ld", (long)[indexPath row]]];
+                        dispatch_suspend(<#dispatch_object_t object#>)
                     });
                 });
             }

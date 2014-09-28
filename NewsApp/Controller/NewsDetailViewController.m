@@ -50,4 +50,9 @@
     NSLog(@"Loading ends");
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    if([_app.activityIndicator isAnimating])
+       [_app.activityIndicator stopAnimating];
+}
+
 @end
