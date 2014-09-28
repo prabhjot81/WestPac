@@ -107,7 +107,6 @@ static NSString* const kUserCellIdentifier = @"UserCellIdentifier";
                         [newsCell.imageView setImage:[UIImage imageWithData:imageData]];
                         [activityIndicator stopAnimating];
                         [_newsListImageDictionary setObject:imageData forKey:[NSString stringWithFormat:@"%ld", (long)[indexPath row]]];
-                        dispatch_suspend(<#dispatch_object_t object#>)
                     });
                 });
             }
